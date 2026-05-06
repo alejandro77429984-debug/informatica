@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    min-height: 100vh;
+}
+
+.pantalla {
+    display: none;
+}
+
+.pantalla.activa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.contenedor {
+    background: rgba(255,255,255,0.1);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    width: 90%;
+    max-width: 450px;
+    text-align: center;
+}
+
+.contenedor h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.contenedor p {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+form button {
+    padding: 14px;
+    border: none;
+    border-radius: 30px;
+    background: #00ffd5;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: white;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+header input {
+    margin-top: 15px;
+    padding: 12px;
+    width: 300px;
+    max-width: 80%;
+    border: none;
+    border-radius: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 30px;
+}
+
+.producto {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    width: 220px;
+    border-radius: 20px;
+    text-align: center;
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-8px);
+}
+
+.producto h2 {
+    margin-bottom: 10px;
+}
+
+.producto p {
+    margin-bottom: 15px;
+    color: #dcdcdc;
+}
+
+.producto button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    background: #00ffd5;
+    font-weight: bold;
+    cursor: pointer;
+}

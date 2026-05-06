@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Universitaria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- REGISTRO INICIAL -->
+    <section id="registro" class="pantalla activa">
+        <div class="contenedor">
+            <h1>Tienda Universitaria</h1>
+            <p>Ingresa tus datos para continuar</p>
+
+            <form id="registroForm">
+                <input type="text" id="carnet" placeholder="Carnet Universitario" required>
+                <input type="text" id="nombre" placeholder="Nombre Completo" required>
+                <input type="text" id="carrera" placeholder="Carrera" required>
+                <input type="text" id="semestre" placeholder="Semestre" required>
+
+                <button type="submit">Ingresar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- TIENDA -->
+    <section id="tienda" class="pantalla">
+        <header>
+            <h1>Productos Disponibles</h1>
+            <input type="text" id="buscador" placeholder="Buscar producto...">
+        </header>
+
+        <div class="productos" id="listaProductos">
+
+            <div class="producto" data-nombre="pilfrut">
+                <h2>Pilfrut</h2>
+                <p>Bebida láctea refrescante</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="queque">
+                <h2>Queque</h2>
+                <p>Postre suave y delicioso</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="empanada">
+                <h2>Empanada</h2>
+                <p>Snack clásico universitario</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="salchipapa">
+                <h2>Salchipapa</h2>
+                <p>Comida rápida popular</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="cocacola">
+                <h2>Coca-Cola</h2>
+                <p>Bebida gaseosa</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="producto" data-nombre="fanta">
+                <h2>fanta</h2>
+                <p>Bebida gaseosa</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="producto" data-nombre="energizante">
+                <h2>Energizante</h2>
+                <p>Bebida energética</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="dulce de cafe">
+                <h2>Dulce de Café</h2>
+                <p>dulces</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="budin chocolate">
+                <h2>Budín de Chocolate</h2>
+                <p>Delicioso postre de chocolate</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="salchipollo">
+                <h2>Salchipollo</h2>
+                <p>Comida rápida popular</p>
+                <button>Seleccionar</button>
+            </div>
+
+            <div class="producto" data-nombre="agua 2L">
+                <h2>Agua 2L</h2>
+                <p>Bebida refrescante</p>
+                <button>Seleccionar</button>
+            </div>
+            <div class="producto" data-nombre="cafe">
+                <h2>Café</h2>
+                <p> bebida caliente</p>
+                <button>Seleccionar</button>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
