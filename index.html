@@ -1,111 +1,97 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGA YA</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAGA YA</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- REGISTRO INICIAL -->
-    <section id="registro" class="pantalla activa">
-        <div class="contenedor">
-            <h1>PAGA YA</h1>
-            <p>Ingresa tus datos para continuar</p>
+<section id="registro" class="pantalla activa">
 
-            <form id="registroForm">
-                <input type="text" id="carnet" placeholder="Carnet Universitario" required>
-                <input type="text" id="nombre" placeholder="Nombre Completo" required>
-                <input type="text" id="carrera" placeholder="Carrera" required>
-                <input type="text" id="semestre" placeholder="Semestre" required>
+<div class="contenedor">
 
-                <button type="submit">Ingresar</button>
-            </form>
-        </div>
-    </section>
+<h1>PAGA YA</h1>
+<p>Ingresa tus datos</p>
 
-    <!-- TIENDA -->
-    <section id="tienda" class="pantalla">
-        <header>
-            <h1>Productos Disponibles</h1>
-            <input type="text" id="buscador" placeholder="Buscar producto...">
-        </header>
+<form id="registroForm">
 
-        <div class="productos" id="listaProductos">
+<input type="text" id="carnet" placeholder="Carnet Universitario" maxlength="10" required>
 
-            <div class="producto" data-nombre="pilfrut">
-                <h2>Pilfrut</h2>
-                <p>Bebida láctea refrescante</p>
-                <button>Seleccionar</button>
-            </div>
+<input type="text" id="nombre" placeholder="Nombre Completo" required>
 
-            <div class="producto" data-nombre="queque">
-                <h2>Queque</h2>
-                <p>Postre suave y delicioso</p>
-                <button>Seleccionar</button>
-            </div>
+<select id="carrera" required>
+<option value="">Selecciona Carrera</option>
+<option>Ing Sistemas</option>
+<option>Ciencias Educación</option>
+<option>Derecho</option>
+<option>Contaduría</option>
+</select>
 
-            <div class="producto" data-nombre="empanada">
-                <h2>Empanada</h2>
-                <p>Snack clásico universitario</p>
-                <button>Seleccionar</button>
-            </div>
+<select id="semestre" required>
+<option value="">Selecciona Semestre</option>
+<option>1er</option>
+<option>3er</option>
+<option>5to</option>
+<option>7mo</option>
+<option>9no</option>
+</select>
 
-            <div class="producto" data-nombre="salchipapa">
-                <h2>Salchipapa</h2>
-                <p>Comida rápida popular</p>
-                <button>Seleccionar</button>
-            </div>
+<div class="password-box">
+<input type="password" id="password" placeholder="Contraseña" required>
+<span id="ojo">👁️</span>
+</div>
 
-            <div class="producto" data-nombre="cocacola">
-                <h2>Coca-Cola</h2>
-                <p>Bebida gaseosa</p>
-                <button>Seleccionar</button>
-            </div>
-            <div class="producto" data-nombre="fanta">
-                <h2>fanta</h2>
-                <p>Bebida gaseosa</p>
-                <button>Seleccionar</button>
-            </div>
-            <div class="producto" data-nombre="energizante">
-                <h2>Energizante</h2>
-                <p>Bebida energética</p>
-                <button>Seleccionar</button>
-            </div>
+<button type="submit">Ingresar</button>
 
-            <div class="producto" data-nombre="dulce de cafe">
-                <h2>Dulce de Café</h2>
-                <p>dulces</p>
-                <button>Seleccionar</button>
-            </div>
+</form>
 
-            <div class="producto" data-nombre="budin chocolate">
-                <h2>Budín de Chocolate</h2>
-                <p>Delicioso postre de chocolate</p>
-                <button>Seleccionar</button>
-            </div>
+</div>
 
-            <div class="producto" data-nombre="salchipollo">
-                <h2>Salchipollo</h2>
-                <p>Comida rápida popular</p>
-                <button>Seleccionar</button>
-            </div>
+</section>
 
-            <div class="producto" data-nombre="agua 2L">
-                <h2>Agua 2L</h2>
-                <p>Bebida refrescante</p>
-                <button>Seleccionar</button>
-            </div>
-            <div class="producto" data-nombre="cafe">
-                <h2>Café</h2>
-                <p> bebida caliente</p>
-                <button>Seleccionar</button>
-            </div>
 
-        </div>
-    </section>
+<section id="tienda" class="pantalla">
 
-    <script src="script.js"></script>
+<header>
+
+<h1>Productos Disponibles</h1>
+
+<input type="text" id="buscador" placeholder="Buscar producto">
+
+</header>
+
+
+<div class="productos" id="listaProductos">
+
+</div>
+
+
+<div class="carrito">
+
+<h2>Tu Pedido</h2>
+
+<ul id="listaPedido"></ul>
+
+<h3>Total: Bs <span id="total">0</span></h3>
+
+<select id="metodoPago">
+
+<option>Efectivo</option>
+
+<option>QR</option>
+
+</select>
+
+<button id="finalizar">Pagar</button>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
 </body>
 </html>
